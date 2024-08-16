@@ -6,7 +6,7 @@ import connectDB from "./db/index.js";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import { app } from "./app.js";
-dotenv.config({ path: "./env" });
+dotenv.config({ path: "./.env" });
 connectDB()
   .then(() => {
     app.listen(process.env.PORT || 8000, () => {
